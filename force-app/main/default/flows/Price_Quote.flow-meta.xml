@@ -260,8 +260,8 @@
     <decisions>
         <name>checkModel</name>
         <label>Check Model</label>
-        <locationX>260</locationX>
-        <locationY>157</locationY>
+        <locationX>255</locationX>
+        <locationY>100</locationY>
         <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
         <rules>
             <name>ifModelFlint</name>
@@ -540,36 +540,8 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
-    <recordLookups>
-        <name>getVehicle</name>
-        <label>Get vehicle</label>
-        <locationX>259</locationX>
-        <locationY>40</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>checkModel</targetReference>
-        </connector>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>recordId</elementReference>
-            </value>
-        </filters>
-        <object>Vehicle__c</object>
-        <outputReference>vehicle</outputReference>
-        <queriedFields>Id</queriedFields>
-        <queriedFields>Model__c</queriedFields>
-        <queriedFields>Battery__c</queriedFields>
-        <queriedFields>Self_Driving__c</queriedFields>
-        <queriedFields>Autopilot__c</queriedFields>
-        <queriedFields>Sunroof__c</queriedFields>
-        <queriedFields>Spoiler__c</queriedFields>
-        <queriedFields>Rear_Seats__c</queriedFields>
-        <queriedFields>Hydraulic_System__c</queriedFields>
-    </recordLookups>
-    <startElementReference>getVehicle</startElementReference>
-    <status>Active</status>
+    <startElementReference>checkModel</startElementReference>
+    <status>Draft</status>
     <variables>
         <name>price</name>
         <dataType>Currency</dataType>
@@ -592,7 +564,7 @@
         <name>vehicle</name>
         <dataType>SObject</dataType>
         <isCollection>false</isCollection>
-        <isInput>false</isInput>
+        <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Vehicle__c</objectType>
     </variables>

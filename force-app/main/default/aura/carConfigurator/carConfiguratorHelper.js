@@ -24,6 +24,7 @@
     },
 
     saveRecord: function (component, event, helper) {
+        /*
         var color = component.get("v.color");
         component.set("v.simpleRecord.Paint__c", color);
 
@@ -44,5 +45,6 @@
                 console.log('Unknown problem, state: ' + saveResult.state + ', error: ' + JSON.stringify(saveResult.error));
             }
         }));
+        */
     }
 })

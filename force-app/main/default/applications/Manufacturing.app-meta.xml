@@ -18,8 +18,6 @@
     <tabs>Vehicle__c</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>Inspection__c</tabs>
-    <tabs>Parts__x</tabs>
-    <tabs>VehicleParts__x</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Manufacturing_UtilityBar</utilityBar>
 </CustomApplication>

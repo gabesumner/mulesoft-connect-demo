@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>RequestUseSfdc</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -171,7 +171,7 @@
         <fields>NAME</fields>
         <fields>Model__c</fields>
         <fields>Status__c</fields>
-        <fields>LAST_UPDATE</fields>
+        <fields>Delivery_Date__c</fields>
         <relatedList>Vehicle__c.Owner__c</relatedList>
     </relatedLists>
     <relatedLists>
@@ -236,7 +236,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h54000000njSK</masterLabel>
+        <masterLabel>00h0v000000rjeD</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

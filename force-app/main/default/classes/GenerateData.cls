@@ -20,6 +20,27 @@ public with sharing class GenerateData {
         GenerateAccounts(NumberofAccounts, true);      
     }
 
+    public static void CreateReema() {        
+        Account account = new Account();
+        account.Name = 'Reema Karr';
+        account.Type = 'Customer';
+        account.Username__c = 'reemakarr';
+        account.Phone = '(555) ' + String.valueOf(randomInt(111, 999)) + '-' + String.valueOf(randomInt(1111, 9999));
+        account = GetRandomAddress(account);
+        insert account;
+
+        Contact contact = CreateContact(account);
+        insert contact;
+
+        Vehicle__c vehicle = CreateVehicle(contact, false);
+        vehicle.Model__c = 'Flash';
+        vehicle.Paint__c = '0';
+        vehicle.Status__c = 'Manufacturing';
+        vehicle.Manufacturing_Status__c = 'Backlog';
+        vehicle.Delivery_Date__c = randomDate(Date.today().addDays(60), Date.today().addDays(190));
+        insert vehicle;
+    }
+
     @AuraEnabled
     public static void DeleteAll() {
         List<Account> accounts = [SELECT Id FROM Account WHERE Name != 'Website Customers'];
@@ -116,7 +137,7 @@ public with sharing class GenerateData {
             vehicle.Status__c = 'Purchase';
             vehicle.Prediction_Sample__c = true;
         } else {
-            vehicle.Status__c = randomString(new string[]{'Evaluation', 'Purchase', 'Manufacturing', 'Delivery', 'Ownership'});
+            vehicle.Status__c = randomString(new string[]{'Manufacturing', 'Manufacturing', 'Manufacturing', 'Delivery', 'Ownership'});
         }
         
         if (vehicle.Status__c != 'Evaluation') {
@@ -155,7 +176,25 @@ public with sharing class GenerateData {
         }
         
         if (vehicle.Status__c == 'Manufacturing') {
-            vehicle.Manufacturing_Status__c = randomString(new string[]{'Backlog', 'Stamping', 'Welding', 'Painting', 'Assembly', 'Delivered'});
+            vehicle.Manufacturing_Status__c = randomString(new string[]{'Backlog', 'Backlog', 'Backlog', 'Stamping', 'Welding', 'Painting', 'Assembly'});
+        }
+
+        if (vehicle.Status__c == 'Delivery') {
+            vehicle.Manufacturing_Status__c = 'Shipping';
+        }
+
+        if (vehicle.Status__c == 'Ownership') {
+            vehicle.Manufacturing_Status__c = 'Delivered';
+        }
+        
+        if (vehicle.Status__c != 'Evaluation' &&  vehicle.Status__c != 'Purchased') {
+            if (vehicle.Status__c == 'Manufacturing') {
+                vehicle.Delivery_Date__c = randomDate(Date.today().addDays(60), Date.today().addDays(190));
+            } else if (vehicle.Status__c == 'Delivery') {
+                vehicle.Delivery_Date__c = randomDate(Date.today().addDays(30), Date.today().addDays(40));
+            } else {
+                vehicle.Delivery_Date__c = randomDate(Date.today().addDays(-190), Date.today().addDays(-30));
+            }
         }
         
         return vehicle;

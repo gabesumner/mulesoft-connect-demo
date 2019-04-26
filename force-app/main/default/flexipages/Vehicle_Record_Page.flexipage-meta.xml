@@ -19,42 +19,17 @@
             </componentInstanceProperties>
             <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
         </componentInstances>
-        <mode>Replace</mode>
         <name>header</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentInstanceProperties>
-                <name>relatedListComponentOverride</name>
-                <value>NONE</value>
-            </componentInstanceProperties>
-            <componentName>force:relatedListContainer</componentName>
-        </componentInstances>
-        <mode>Replace</mode>
-        <name>relatedTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
             <componentName>force:detailPanel</componentName>
         </componentInstances>
-        <mode>Replace</mode>
         <name>detailTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>relatedTabContent</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Standard.Tab.relatedLists</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
                 <name>active</name>
@@ -70,7 +45,6 @@
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>
-        <mode>Replace</mode>
         <name>maintabs</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -82,16 +56,8 @@
             </componentInstanceProperties>
             <componentName>flexipage:tabset</componentName>
         </componentInstances>
-        <mode>Replace</mode>
         <name>main</name>
         <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentName>carConfigurator</componentName>
-        </componentInstances>
-        <name>Facet-b6ae047e-0960-46fe-8232-4b88464d0342</name>
-        <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
@@ -105,118 +71,40 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>flowName</name>
-                <value>Order_Vehicle</value>
+                <value>Modify_Vehicle</value>
             </componentInstanceProperties>
             <componentName>flowruntime:interview</componentName>
         </componentInstances>
-        <name>Facet-9ae55246-064a-4917-809c-3efaa0fe3f0d</name>
+        <name>Facet-85af18b8-46ca-448e-8f13-a71f2b632c4b</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
-                <name>active</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
                 <name>body</name>
-                <value>Facet-b6ae047e-0960-46fe-8232-4b88464d0342</value>
+                <value>Facet-85af18b8-46ca-448e-8f13-a71f2b632c4b</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
-                <value>Customize</value>
+                <value>Vehicle</value>
             </componentInstanceProperties>
             <componentName>flexipage:tab</componentName>
         </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>Facet-9ae55246-064a-4917-809c-3efaa0fe3f0d</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Order</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
-        <name>Facet-d0502d25-07db-47c8-9dc3-8e3e78ee8659</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentName>runtime_sales_activities:activityPanel</componentName>
-        </componentInstances>
-        <mode>Replace</mode>
-        <name>activityTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentName>forceChatter:recordFeedContainer</componentName>
-        </componentInstances>
-        <mode>Replace</mode>
-        <name>feedTabContent</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>active</name>
-                <value>true</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>activityTabContent</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Standard.Tab.activity</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>body</name>
-                <value>feedTabContent</value>
-            </componentInstanceProperties>
-            <componentInstanceProperties>
-                <name>title</name>
-                <value>Standard.Tab.collaborate</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tab</componentName>
-        </componentInstances>
-        <mode>Replace</mode>
-        <name>sidebartabs</name>
+        <name>Facet-e9981862-3a96-4219-9305-da8d1c19b1fb</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
                 <name>tabs</name>
-                <value>Facet-d0502d25-07db-47c8-9dc3-8e3e78ee8659</value>
-            </componentInstanceProperties>
-            <componentName>flexipage:tabset</componentName>
-            <visibilityRule>
-                <criteria>
-                    <leftValue>{!Record.Status__c}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Evaluation</rightValue>
-                </criteria>
-            </visibilityRule>
-        </componentInstances>
-        <componentInstances>
-            <componentInstanceProperties>
-                <name>tabs</name>
-                <value>sidebartabs</value>
+                <value>Facet-e9981862-3a96-4219-9305-da8d1c19b1fb</value>
             </componentInstanceProperties>
             <componentName>flexipage:tabset</componentName>
         </componentInstances>
-        <mode>Replace</mode>
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Vehicle Record Page</masterLabel>
-    <parentFlexiPage>flexipage__default_rec_L</parentFlexiPage>
     <sobjectType>Vehicle__c</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>

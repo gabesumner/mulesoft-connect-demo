@@ -49,8 +49,8 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>true</enableHistory>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -58,10 +58,8 @@
     <enableStreamingApi>true</enableStreamingApi>
     <label>Vehicle</label>
     <nameField>
-        <displayFormat>{YYYY}{MM}-{00000}</displayFormat>
+        <displayFormat>V-{000000}</displayFormat>
         <label>Vehicle ID</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Vehicles</pluralLabel>
@@ -70,9 +68,9 @@
         <lookupPhoneDialogsAdditionalFields>Model__c</lookupPhoneDialogsAdditionalFields>
         <searchFilterFields>Model__c</searchFilterFields>
         <searchResultsAdditionalFields>Owner__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Model__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Manufacturing_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Delivery_Date__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
