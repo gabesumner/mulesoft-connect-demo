@@ -139,7 +139,8 @@
         </connector>
         <fields>
             <name>confirmMessage</name>
-            <fieldText>Click Next to confirm these changes.</fieldText>
+            <fieldText>CONFIRM CHANGES
+Click Next to confirm these changes.</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>

@@ -176,7 +176,7 @@ public with sharing class GenerateData {
         }
         
         if (vehicle.Status__c == 'Manufacturing') {
-            vehicle.Manufacturing_Status__c = randomString(new string[]{'Backlog', 'Backlog', 'Backlog', 'Stamping', 'Welding', 'Painting', 'Assembly'});
+            vehicle.Manufacturing_Status__c = randomString(new string[]{'Backlog', 'Backlog', 'Backlog', 'Stamping', 'Painting', 'Assembly'});
         }
 
         if (vehicle.Status__c == 'Delivery') {
