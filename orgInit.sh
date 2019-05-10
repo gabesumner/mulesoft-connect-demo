@@ -1,4 +1,4 @@
-sfdx force:org:create -f config/project-scratch-def.json -d 30 -s -w 60
+sfdx shane:org:create -f config/project-scratch-def.json -d 60 -s -n --userprefix admin --userdomain electron.demo
 
 sfdx force:source:push
 sfdx force:user:permset:assign -n electron
