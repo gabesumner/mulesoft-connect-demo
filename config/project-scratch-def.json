@@ -1,4 +1,21 @@
 {
-    "orgName": "Electron Motors",
-    "sourceOrg": "00Df4000003AHjV"
-}
+    "orgName": "mulesoft-connect-demo",
+    "adminEmail": "platformpmmdemos@gmail.com",
+    "edition": "Developer",
+    "features": [
+      "Communities",
+      "EinsteinAssistant",
+      "SiteDotCom",
+      "Sites",
+      "DevelopmentWave"
+    ],
+    "settings": {
+      "orgPreferenceSettings": {
+        "networksEnabled": true,
+        "s1DesktopEnabled": true,
+        "pathAssistantsEnabled": true,
+        "s1EncryptedStoragePref2": false,
+        "selfSetPasswordInApi": true
+      }
+    }
+  }
