@@ -1,4 +1,4 @@
-<aura:component controller="DemoController">
+<aura:component controller="MuleSoftDemoController">
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <aura:attribute name="vehicles" type="List" />
     <div>
