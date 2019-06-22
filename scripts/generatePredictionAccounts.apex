@@ -1,1 +1,1 @@
-GenerateData.GeneratePredictionAccounts(1000);
+DemoController.GeneratePredictionAccounts(1000);

@@ -1,1 +1,1 @@
-GenerateData.CreateReema();
+DemoController.CreateReema();
