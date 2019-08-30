@@ -539,9 +539,9 @@
             <stringValue>LightningFlowBuilder</stringValue>
         </value>
     </processMetadataValues>
-    <processType>Flow</processType>
+    <processType>AutoLaunchedFlow</processType>
     <startElementReference>checkModel</startElementReference>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>price</name>
         <dataType>Currency</dataType>

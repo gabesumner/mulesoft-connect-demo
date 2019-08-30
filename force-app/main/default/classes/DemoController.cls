@@ -307,7 +307,7 @@ public with sharing class DemoController {
         }
         
         if (vehicle.Status__c == 'Manufacturing') {
-            vehicle.Manufacturing_Status__c = randomString(new string[]{'Backlog', 'Stamping', 'Welding', 'Painting', 'Assembly', 'Shipping', 'Delivered'});
+            vehicle.Manufacturing_Status__c = randomString(new string[]{'Backlog', 'Stamping', 'Painting', 'Assembly', 'Shipping', 'Delivered'});
         }
         
         return vehicle;
